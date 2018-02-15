@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+	Formularios: Contenedor que sirver para encapsular m&eacute;todos de entrada de datos del usuarios <br>
+	en el formulario se puede:
+
+	<ol>
+		<li>Capturar datos</li>
+		<li>Validar lo que se ingresa</li>
+		<li>Enviar a proceso</li>
+		<li>Reiniciar la captura</li>
+	</ol>
+	<form action="procesa.html" method="post"> 
+		<input name="txtNumeroControl" type="text" placeholder="N&uacute;mero de control" required autofocus>
+		<input name="txtClave" type="password" placeholder="Ingrese clave" required>
+		<input name="txtPromedio" type="number" placeholder="Promedio">
+		<input name="txtFecha" type="date">
+		<input name="txtColor" type="color">
+		<input name="txtCorreo" type="email">
+		<input name="txtBuscar" type="search">
+		<!--Funciona para enviar en un form // se ultiliza solo en el form // le envia los datos a procesa.html atraves de get -->
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Borrar">
+		<!-- No Funciona para enviar en un form -->
+		<input type="button" value="No Enviar">
+
+
+
+
+	</form>
+
+
+</body>
+</html>
